@@ -5,7 +5,6 @@ using UnityEngine;
 public class MoveGerichte : MonoBehaviour
 {
     public float speed = 5f;
-    public Vector3 playerPosition;
     public string rotationDirection;
 
     // Start is called before the first frame update
