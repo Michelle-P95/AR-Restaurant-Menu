@@ -19,14 +19,17 @@ public class Speisekarte : MonoBehaviour
         virtualButton.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonPressed(OnButtonPressed);
         virtualButton.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonReleased(OnButtonReleased);
 
-        gericht3Dmodel.SetActive(false);
+        GameObject.Find("Pizza", "Hotdog", "Burger").setActive(false);
+
  
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
+        //gericht3Dmodel.SetActive(false);
+        CheckButtonStatus;
     }
 
     // Methoden wenn VirtualButton mit finger getriggert wird
@@ -40,6 +43,12 @@ public class Speisekarte : MonoBehaviour
     public void OnButtonReleased(VirtualButtonBehaviour vb)
     {
         Debug.Log("Button released");
+
        
+    }
+
+    public void CheckButtonStatus()
+    { 
+        
     }
 }

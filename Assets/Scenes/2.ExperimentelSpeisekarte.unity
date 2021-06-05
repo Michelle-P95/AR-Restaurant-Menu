@@ -261,7 +261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 54b107e50acd7e24b96d7de887c68833, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.39
+      value: -4.63
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 54b107e50acd7e24b96d7de887c68833, type: 3}
       propertyPath: m_LocalPosition.y
@@ -356,7 +356,6 @@ MonoBehaviour:
   gericht: Burger
   gericht3Dmodel: {fileID: 975408250}
   virtualButton: {fileID: 975408250}
-  plane: {fileID: 343958276}
 --- !u!114 &215939796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,7 +369,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  playerPosition: {x: 0, y: 0, z: 0}
   rotationDirection: links
 --- !u!1 &343958276
 GameObject:
@@ -1737,7 +1735,6 @@ MonoBehaviour:
   gericht: Hotdog
   gericht3Dmodel: {fileID: 1193158186}
   virtualButton: {fileID: 916233457}
-  plane: {fileID: 343958276}
 --- !u!114 &1193158191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1751,7 +1748,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  playerPosition: {x: 0, y: 0, z: 0}
   rotationDirection: rechts
 --- !u!1 &1208449554
 GameObject:
@@ -1841,7 +1837,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208449554}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: -5.74}
+  m_LocalPosition: {x: 0, y: 0.5, z: -5.73}
   m_LocalScale: {x: 2.0134, y: 1, z: 1.4294}
   m_Children:
   - {fileID: 1753261597}
@@ -2071,7 +2067,6 @@ MonoBehaviour:
   gericht: Pizza
   gericht3Dmodel: {fileID: 1321609478}
   virtualButton: {fileID: 1280656659}
-  plane: {fileID: 343958276}
 --- !u!114 &1321609480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2097,7 +2092,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  playerPosition: {x: 0, y: 0, z: 0}
   rotationDirection: links
 --- !u!1 &1477902751
 GameObject:
