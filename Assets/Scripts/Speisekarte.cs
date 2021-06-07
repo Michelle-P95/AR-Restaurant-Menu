@@ -10,7 +10,9 @@ public class Speisekarte : MonoBehaviour
     public String gericht;
     public GameObject gericht3Dmodel;
     public GameObject virtualButton;
+    public GameObject gericht3DmodelLast;
     
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,18 +20,15 @@ public class Speisekarte : MonoBehaviour
 
         virtualButton.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonPressed(OnButtonPressed);
         virtualButton.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonReleased(OnButtonReleased);
-
-        GameObject.Find("Pizza", "Hotdog", "Burger").setActive(false);
-
- 
+        
+        gericht3Dmodel.SetActive(false);
+               
     }
 
     // Update is called once per frame
     void Update()
     {
         
-        //gericht3Dmodel.SetActive(false);
-        CheckButtonStatus;
     }
 
     // Methoden wenn VirtualButton mit finger getriggert wird
@@ -47,8 +46,4 @@ public class Speisekarte : MonoBehaviour
        
     }
 
-    public void CheckButtonStatus()
-    { 
-        
-    }
 }
