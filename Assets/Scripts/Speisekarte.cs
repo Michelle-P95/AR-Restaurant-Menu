@@ -10,7 +10,7 @@ public class Speisekarte : MonoBehaviour
     public String gericht;
     public GameObject gericht3Dmodel;
     public GameObject virtualButton;
-    public GameObject gericht3DmodelLast;
+    public GameObject lastGericht;
     
 
     // Start is called before the first frame update
