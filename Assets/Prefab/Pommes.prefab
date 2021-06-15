@@ -11,9 +11,12 @@ GameObject:
   - component: {fileID: 3612933050182640966}
   - component: {fileID: 7603790044015016457}
   - component: {fileID: 548639211366969428}
+  - component: {fileID: 947176154}
+  - component: {fileID: 947176155}
+  - component: {fileID: 947176156}
   m_Layer: 0
-  m_Name: Pommes 1
-  m_TagString: Untagged
+  m_Name: Pommes
+  m_TagString: dish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1044095209439028263}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.2, y: 1.8161592, z: -6.3}
-  m_LocalScale: {x: 63.92804, y: 63.92804, z: 63.92804}
+  m_LocalScale: {x: 52.644737, y: 52.644737, z: 55.68234}
   m_Children:
   - {fileID: 9024793413474331752}
   - {fileID: 3946621608832941514}
@@ -81,6 +84,49 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &947176154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044095209439028263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47c459ad1b6264c179d666363f61c7f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gericht: Pommes
+  gericht3Dmodel: {fileID: 1044095209439028263}
+  virtualButton: {fileID: 0}
+  otherDishButtons: []
+  blackBackground: {fileID: 0}
+--- !u!114 &947176155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044095209439028263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d671d8c297c946ebb77aa9aa7bcf895, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &947176156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044095209439028263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04e9c93446310439da9947eac99e3cd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.39
+  rotationDirection: links
 --- !u!1 &7965126647295694166
 GameObject:
   m_ObjectHideFlags: 0
