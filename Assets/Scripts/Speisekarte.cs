@@ -23,7 +23,7 @@ public class Speisekarte : MonoBehaviour
         virtualButton.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonReleased(OnButtonReleased);
 
         gericht3Dmodel.SetActive(false);
-        //gericht3Dmodel.tag = "Modelle";
+        
 
     }
 
