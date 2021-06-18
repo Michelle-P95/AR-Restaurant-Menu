@@ -9,6 +9,7 @@ public class Speisekarte : MonoBehaviour
     public String gericht;
     public GameObject gericht3Dmodel;
     public GameObject virtualButton;
+    
     public GameObject[] otherDishButtons;
     public GameObject blackBackground;
 
@@ -17,6 +18,9 @@ public class Speisekarte : MonoBehaviour
     private Transform backButtonPosition;
     private Transform originalButtonPosition;
     private Animation fadeIn, fadeOut;
+    
+    public GameObject gericht3DmodelLast;
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +32,7 @@ public class Speisekarte : MonoBehaviour
 
         virtualButton.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonPressed(OnButtonPressed);
         virtualButton.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonReleased(OnButtonReleased);
-
+        
         gericht3Dmodel.SetActive(false);
         blackBackground.SetActive(false);
         fadeIn = blackBackground.GetComponent<Animation>();
@@ -39,7 +43,7 @@ public class Speisekarte : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     // Methoden wenn VirtualButton mit finger getriggert wird
@@ -107,4 +111,5 @@ public class Speisekarte : MonoBehaviour
             virtualButton.transform.position = originalButtonPosition.position;
         }
     }
+
 }
