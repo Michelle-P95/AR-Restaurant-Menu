@@ -16,6 +16,7 @@ public class Speisekarte : MonoBehaviour
     private Boolean dishActive;
     private Transform backButtonPosition;
     private Transform originalButtonPosition;
+    private Animation fadeIn, fadeOut;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class Speisekarte : MonoBehaviour
 
         gericht3Dmodel.SetActive(false);
         blackBackground.SetActive(false);
+        fadeIn = blackBackground.GetComponent<Animation>();
         description.SetActive(false);
         dishActive = false;
     }
@@ -58,6 +60,7 @@ public class Speisekarte : MonoBehaviour
             {
                 gericht3Dmodel.SetActive(true);
                 blackBackground.SetActive(true);
+                fadeIn.Play();
                 description.SetActive(true);
                 dishActive = true;
                 // changeButtonPosition();
