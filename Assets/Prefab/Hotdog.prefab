@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6033543760647338439}
   - component: {fileID: 6033543760646568423}
   - component: {fileID: 6033543760645569319}
-  - component: {fileID: 6033543760647725892}
   - component: {fileID: 6033543760647725889}
+  - component: {fileID: 6033543760647725892}
   - component: {fileID: 6033543760647725888}
   m_Layer: 0
   m_Name: Hotdog
@@ -84,18 +84,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &6033543760647725892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6033543760647759335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d671d8c297c946ebb77aa9aa7bcf895, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6033543760647725889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,7 +99,20 @@ MonoBehaviour:
   gericht: Hotdog
   gericht3Dmodel: {fileID: 6033543760647759335}
   virtualButton: {fileID: 0}
-  plane: {fileID: 0}
+  otherDishButtons: []
+  blackBackground: {fileID: 0}
+--- !u!114 &6033543760647725892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6033543760647759335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d671d8c297c946ebb77aa9aa7bcf895, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6033543760647725888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,5 +126,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  playerPosition: {x: 0, y: 0, z: 0}
   rotationDirection: rechts
