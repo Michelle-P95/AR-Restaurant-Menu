@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6033543760646568423}
   - component: {fileID: 6033543760645569319}
   - component: {fileID: 6033543760647725889}
-  - component: {fileID: 6033543760647725892}
   - component: {fileID: 6033543760647725888}
   m_Layer: 0
   m_Name: Hotdog
@@ -101,18 +100,8 @@ MonoBehaviour:
   virtualButton: {fileID: 0}
   otherDishButtons: []
   blackBackground: {fileID: 0}
---- !u!114 &6033543760647725892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6033543760647759335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d671d8c297c946ebb77aa9aa7bcf895, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  blackBackgroundAnimator: {fileID: 0}
+  activeDishKeeper: {fileID: 0}
 --- !u!114 &6033543760647725888
 MonoBehaviour:
   m_ObjectHideFlags: 0

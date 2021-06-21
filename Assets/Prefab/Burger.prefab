@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2092457329795284504}
   - component: {fileID: 2092457329794317528}
   - component: {fileID: 2092457329796474022}
-  - component: {fileID: 2092457329796474021}
   - component: {fileID: 2092457329796474017}
   m_Layer: 0
   m_Name: Burger
@@ -107,18 +106,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   blackBackground: {fileID: 0}
---- !u!114 &2092457329796474021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092457329796571672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d671d8c297c946ebb77aa9aa7bcf895, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  blackBackgroundAnimator: {fileID: 0}
+  activeDishKeeper: {fileID: 0}
 --- !u!114 &2092457329796474017
 MonoBehaviour:
   m_ObjectHideFlags: 0
