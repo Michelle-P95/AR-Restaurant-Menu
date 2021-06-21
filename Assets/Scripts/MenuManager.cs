@@ -6,11 +6,13 @@ public class MenuManager : MonoBehaviour
 {
 
     public ActiveDishKeeper activeDishKeeper;
+    public Warenkorb warenkorb;
 
     private GameObject backgroundPanel;
     private GameObject[] dishUIsArray; // dishUIs is searching for GameObjects with Tag dishUI !!!! 
     private GameObject activeDishUI;
     private GameObject bestellButton, warenkorbButton;
+    
 
     void Start()
     {
