@@ -7,5 +7,6 @@ public class ButtonTranslateBehav : MonoBehaviour
     public void DOSOMETHING()
     {
         FindObjectOfType<TextPlanes>().changeLang();
+        FindObjectOfType<HeaderBehav>().changeLang();
     }
 }
