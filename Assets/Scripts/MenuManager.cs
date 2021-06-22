@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour
 
     public ActiveDishKeeper activeDishKeeper;
     public Warenkorb warenkorb;
+    public GameObject warenkorbTextField;
     
     private TextMeshProUGUI dishName_Text;
     private GameObject backgroundPanel;
@@ -33,6 +34,7 @@ public class MenuManager : MonoBehaviour
         backgroundPanel.SetActive(false);
         backButton.SetActive(false);
         warenkorbAddButton.SetActive(false);
+        warenkorbTextField.SetActive(false);
         buyButton.SetActive(false);
 
         warenkorbIsOpen = false;
@@ -120,6 +122,7 @@ public class MenuManager : MonoBehaviour
         backButton.SetActive(true);
         warenkorbButton.SetActive(false);
         bestellButton.SetActive(false);
+        warenkorbTextField.SetActive(true);
         buyButton.SetActive(true);
 
         warenkorbIsOpen = true;
@@ -131,6 +134,7 @@ public class MenuManager : MonoBehaviour
         backButton.SetActive(false);
         warenkorbButton.SetActive(true);
         bestellButton.SetActive(true);
+        warenkorbTextField.SetActive(false);
         buyButton.SetActive(false);
 
         warenkorbIsOpen = false;
