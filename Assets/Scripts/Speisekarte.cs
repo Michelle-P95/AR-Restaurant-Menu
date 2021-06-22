@@ -18,6 +18,7 @@ public class Speisekarte : MonoBehaviour
     private Transform backButtonPosition;
     private Transform originalButtonPosition;
     private Animation fadeIn, fadeOut;
+    private TextPlanes textplanes;
     
     public GameObject gericht3DmodelLast;
 
@@ -27,6 +28,7 @@ public class Speisekarte : MonoBehaviour
     {
         virtualButton = GameObject.Find("VirtualButton_" + gericht);
         description = GameObject.Find(gericht + "_Description");
+        textplanes = description.GetComponent<TextPlanes>();
         backButtonPosition = GameObject.Find("BackButtonPosition").transform;
         originalButtonPosition = virtualButton.transform;
 
@@ -53,7 +55,7 @@ public class Speisekarte : MonoBehaviour
         {
             gericht3Dmodel.SetActive(false);
             blackBackground.SetActive(false);
-            description.SetActive(false);
+            textplanes.goOff();
             dishActive = false;
             // changeButtonPosition();
             activateDeactivateOtherButtons();
@@ -65,7 +67,7 @@ public class Speisekarte : MonoBehaviour
                 gericht3Dmodel.SetActive(true);
                 blackBackground.SetActive(true);
                 fadeIn.Play();
-                description.SetActive(true);
+                textplanes.goOn();
                 dishActive = true;
                 // changeButtonPosition();
                 activateDeactivateOtherButtons();
