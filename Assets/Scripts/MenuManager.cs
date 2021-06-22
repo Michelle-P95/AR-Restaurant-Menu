@@ -11,18 +11,28 @@ public class MenuManager : MonoBehaviour
     private GameObject backgroundPanel;
     private GameObject[] dishUIsArray; // dishUIs is searching for GameObjects with Tag dishUI !!!! 
     private GameObject activeDishUI;
-    private GameObject bestellButton, warenkorbButton;
+    private GameObject bestellButton, warenkorbAddButton, warenkorbButton, backButton, buyButton;
     
+    private bool warenkorbIsOpen;
+
+    private string fullBestellung, optionsAsString;
 
     void Start()
     {
         backgroundPanel = GameObject.Find("BackgroundPanel");
         dishUIsArray = GameObject.FindGameObjectsWithTag("dishUI");
         bestellButton = GameObject.Find("Button_Bestellen");
-        warenkorbButton = GameObject.Find("Button_AddToKorb");
+        warenkorbAddButton = GameObject.Find("Button_AddToKorb");
+        warenkorbButton = GameObject.Find("Button_Warenkorb");
+        backButton = GameObject.Find("Button_Zurueck");
+        buyButton = GameObject.Find("Button_Buy");
 
         backgroundPanel.SetActive(false);
-        warenkorbButton.SetActive(false);
+        backButton.SetActive(false);
+        warenkorbAddButton.SetActive(false);
+        buyButton.SetActive(false);
+
+        warenkorbIsOpen = false;
 
         for (int i = 0; i < dishUIsArray.Length; i++)
         {
@@ -48,7 +58,7 @@ public class MenuManager : MonoBehaviour
                     dishUIsArray[i].SetActive(true);
                     activeDishUI = dishUIsArray[i];
                 }
-                ActivateUI();
+                ActivateDishUI();
             }
         }
         else
@@ -59,27 +69,83 @@ public class MenuManager : MonoBehaviour
 
     public void BestellenAbbrechen() // gehe zurück zu Speisekarte ohne Gericht zum Warenkorb hinzuzufügen
     {
+        if(warenkorbIsOpen) {
+            DeactivateWarenkorbUI();
+        } else {
         DeactivateUI();
+        }
     }
 
     public void AddToWarenkorb()
     {
         Debug.Log("AddToWarenkorb");
-        // TODO: 
+        GameObject[] dishOptions = GameObject.FindGameObjectsWithTag("dishOption");
+        for(int i = 0; i < dishOptions.Length; i++) {
+            // Debug.Log(dishOptions[i].name);
+            optionsAsString += " - " + dishOptions[i].GetComponent<DishOption>().fullText + "\n";
+        }
+        fullBestellung = activeDishKeeper.activeDishName + "\n" + optionsAsString;
+        // Debug.Log(fullBestellung);
+        warenkorb.bestellungen.Add(fullBestellung);
+        ResetBestellungStrings();
+        DeactivateUI();
     }
 
-    private void ActivateUI()
+    public void ShowWarenkorb() {
+        ActivateWarenkorbUI();
+        Debug.Log(warenkorb.getAlleBestellungen());
+    }
+
+    public void BuyBestellungen() {
+        // sende String des Warenkorbs an Küche, damit sie wissen, was sie zubereiten sollen
+        Debug.Log("Bestellung wurde aufgegeben und wir nun zubereitet.");
+    }
+
+    ///////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
+
+    private void ActivateWarenkorbUI() {
+        backgroundPanel.SetActive(true);
+        backButton.SetActive(true);
+        warenkorbButton.SetActive(false);
+        bestellButton.SetActive(false);
+        buyButton.SetActive(true);
+
+        warenkorbIsOpen = true;
+    }
+
+    private void DeactivateWarenkorbUI() {
+        backgroundPanel.SetActive(false);
+        backButton.SetActive(false);
+        warenkorbButton.SetActive(true);
+        bestellButton.SetActive(true);
+        buyButton.SetActive(false);
+
+        warenkorbIsOpen = false;
+    }
+
+    private void ActivateDishUI()
     {
         backgroundPanel.SetActive(true);
-        warenkorbButton.SetActive(true);
+        warenkorbAddButton.SetActive(true);
+        backButton.SetActive(true);
         bestellButton.SetActive(false);
+        warenkorbButton.SetActive(false);
     }
 
     private void DeactivateUI() {
         backgroundPanel.SetActive(false);
-        warenkorbButton.SetActive(false);
+        warenkorbAddButton.SetActive(false);
+        backButton.SetActive(false);
         bestellButton.SetActive(true);
         activeDishUI.SetActive(false);
+        warenkorbButton.SetActive(true);
         activeDishUI = null;
+    }
+
+    private void ResetBestellungStrings() {
+        fullBestellung = "";
+        optionsAsString = "";
     }
 }

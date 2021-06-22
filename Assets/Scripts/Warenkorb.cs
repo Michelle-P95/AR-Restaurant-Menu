@@ -7,6 +7,8 @@ public class Warenkorb : MonoBehaviour
     public MenuManager menuManager;
     public List<string> bestellungen;
 
+    private string alleBestellungen;
+
     void Start()
     {
         bestellungen.Clear();
@@ -14,6 +16,16 @@ public class Warenkorb : MonoBehaviour
 
     void Update()
     {
-        
+
+    }
+
+    public string getAlleBestellungen()
+    {
+        alleBestellungen = "";
+        foreach (string bestellung in bestellungen)
+        {
+            alleBestellungen += "\n" + bestellung;
+        }
+        return alleBestellungen;
     }
 }
