@@ -1,18 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
 
     public ActiveDishKeeper activeDishKeeper;
     public Warenkorb warenkorb;
-
+    
+    private TextMeshProUGUI dishName_Text;
     private GameObject backgroundPanel;
     private GameObject[] dishUIsArray; // dishUIs is searching for GameObjects with Tag dishUI !!!! 
     private GameObject activeDishUI;
     private GameObject bestellButton, warenkorbAddButton, warenkorbButton, backButton, buyButton;
-    
+
     private bool warenkorbIsOpen;
 
     private string fullBestellung, optionsAsString;
@@ -20,6 +22,7 @@ public class MenuManager : MonoBehaviour
     void Start()
     {
         backgroundPanel = GameObject.Find("BackgroundPanel");
+        dishName_Text = backgroundPanel.GetComponentInChildren<TextMeshProUGUI>();
         dishUIsArray = GameObject.FindGameObjectsWithTag("dishUI");
         bestellButton = GameObject.Find("Button_Bestellen");
         warenkorbAddButton = GameObject.Find("Button_AddToKorb");
@@ -49,7 +52,7 @@ public class MenuManager : MonoBehaviour
     {
         if (activeDishKeeper.dishActive)
         {
-            Debug.Log("Bestellen gedrückt mit aktivem Gericht: " + activeDishKeeper.activeDishName);
+            // Debug.Log("Bestellen gedrückt mit aktivem Gericht: " + activeDishKeeper.activeDishName);
             for (int i = 0; i < dishUIsArray.Length; i++)
             {
                 if (activeDishKeeper.activeDishName + "_UI" == dishUIsArray[i].name)
@@ -69,10 +72,13 @@ public class MenuManager : MonoBehaviour
 
     public void BestellenAbbrechen() // gehe zurück zu Speisekarte ohne Gericht zum Warenkorb hinzuzufügen
     {
-        if(warenkorbIsOpen) {
+        if (warenkorbIsOpen)
+        {
             DeactivateWarenkorbUI();
-        } else {
-        DeactivateUI();
+        }
+        else
+        {
+            DeactivateUI();
         }
     }
 
@@ -80,7 +86,8 @@ public class MenuManager : MonoBehaviour
     {
         Debug.Log("AddToWarenkorb");
         GameObject[] dishOptions = GameObject.FindGameObjectsWithTag("dishOption");
-        for(int i = 0; i < dishOptions.Length; i++) {
+        for (int i = 0; i < dishOptions.Length; i++)
+        {
             // Debug.Log(dishOptions[i].name);
             optionsAsString += " - " + dishOptions[i].GetComponent<DishOption>().fullText + "\n";
         }
@@ -91,12 +98,14 @@ public class MenuManager : MonoBehaviour
         DeactivateUI();
     }
 
-    public void ShowWarenkorb() {
+    public void ShowWarenkorb()
+    {
         ActivateWarenkorbUI();
         Debug.Log(warenkorb.getAlleBestellungen());
     }
 
-    public void BuyBestellungen() {
+    public void BuyBestellungen()
+    {
         // sende String des Warenkorbs an Küche, damit sie wissen, was sie zubereiten sollen
         Debug.Log("Bestellung wurde aufgegeben und wir nun zubereitet.");
     }
@@ -105,7 +114,8 @@ public class MenuManager : MonoBehaviour
     ///////////////////////////////////////////////////////////////
     ///////////////////////////////////////////////////////////////
 
-    private void ActivateWarenkorbUI() {
+    private void ActivateWarenkorbUI()
+    {
         backgroundPanel.SetActive(true);
         backButton.SetActive(true);
         warenkorbButton.SetActive(false);
@@ -115,7 +125,8 @@ public class MenuManager : MonoBehaviour
         warenkorbIsOpen = true;
     }
 
-    private void DeactivateWarenkorbUI() {
+    private void DeactivateWarenkorbUI()
+    {
         backgroundPanel.SetActive(false);
         backButton.SetActive(false);
         warenkorbButton.SetActive(true);
@@ -128,14 +139,17 @@ public class MenuManager : MonoBehaviour
     private void ActivateDishUI()
     {
         backgroundPanel.SetActive(true);
+        dishName_Text.SetText(activeDishKeeper.activeDishName);
         warenkorbAddButton.SetActive(true);
         backButton.SetActive(true);
         bestellButton.SetActive(false);
         warenkorbButton.SetActive(false);
     }
 
-    private void DeactivateUI() {
+    private void DeactivateUI()
+    {
         backgroundPanel.SetActive(false);
+        dishName_Text.SetText("");
         warenkorbAddButton.SetActive(false);
         backButton.SetActive(false);
         bestellButton.SetActive(true);
@@ -144,7 +158,8 @@ public class MenuManager : MonoBehaviour
         activeDishUI = null;
     }
 
-    private void ResetBestellungStrings() {
+    private void ResetBestellungStrings()
+    {
         fullBestellung = "";
         optionsAsString = "";
     }
