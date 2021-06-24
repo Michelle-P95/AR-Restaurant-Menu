@@ -5,7 +5,7 @@ using TMPro;
 
 public class HeaderBehav : MonoBehaviour
 {
-    public GameObject header;
+    [SerializeField] GameObject header;
     public Language language;
     // Start is called before the first frame update
     void Start()
