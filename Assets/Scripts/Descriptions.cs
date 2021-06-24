@@ -3,27 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class HeaderBehav : MonoBehaviour
+public class Descriptions : MonoBehaviour
 {
-    public GameObject header;
+    [SerializeField] TextMeshPro TextField;
+    public string gerText, engText;
     public Language language;
     // Start is called before the first frame update
     void Start()
     {
-        header.SetActive(false);
+        
     }
+
 
     // Update is called once per frame
     void Update()
     {
         if (language.isGerman == true)
         {
-            header.SetActive(false);
+            TextField.SetText(gerText);
         }
         else if (language.isGerman == false)
         {
-            header.SetActive(true);
+            TextField.SetText(engText);
         }
-
     }
 }

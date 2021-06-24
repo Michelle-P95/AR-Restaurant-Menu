@@ -13,6 +13,12 @@ public class Language : MonoBehaviour
         isGerman=true;
     }
 
+    public void changeLang()
+    {
+        if (isGerman == true) { isGerman = false; }
+        else { isGerman = true; }
+    }
+
     // Update is called once per frame
     void Update()
     {
