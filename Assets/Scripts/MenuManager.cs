@@ -15,6 +15,7 @@ public class MenuManager : MonoBehaviour
     private GameObject[] dishUIsArray; // dishUIs is searching for GameObjects with Tag dishUI !!!! 
     private GameObject activeDishUI;
     private GameObject bestellButton, warenkorbAddButton, warenkorbButton, backButton, buyButton;
+    private GameObject bestellungDoneUI;
 
     private bool warenkorbIsOpen;
 
@@ -30,12 +31,14 @@ public class MenuManager : MonoBehaviour
         warenkorbButton = GameObject.Find("Button_Warenkorb");
         backButton = GameObject.Find("Button_Zurueck");
         buyButton = GameObject.Find("Button_Buy");
+        bestellungDoneUI = GameObject.Find("BestellungDone_UI");
 
         backgroundPanel.SetActive(false);
         backButton.SetActive(false);
         warenkorbAddButton.SetActive(false);
         warenkorbTextField.SetActive(false);
         buyButton.SetActive(false);
+        bestellungDoneUI.SetActive(false);
 
         warenkorbIsOpen = false;
 
@@ -77,6 +80,7 @@ public class MenuManager : MonoBehaviour
         if (warenkorbIsOpen)
         {
             DeactivateWarenkorbUI();
+            bestellungDoneUI.SetActive(false);
         }
         else
         {
@@ -110,6 +114,7 @@ public class MenuManager : MonoBehaviour
     {
         // sende String des Warenkorbs an Küche, damit sie wissen, was sie zubereiten sollen
         Debug.Log("Bestellung wurde aufgegeben und wir nun zubereitet.");
+        bestellungDoneUI.SetActive(true);
     }
 
     ///////////////////////////////////////////////////////////////
