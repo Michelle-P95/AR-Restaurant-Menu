@@ -349,7 +349,7 @@ Transform:
   - {fileID: 1141830138}
   - {fileID: 888464926}
   m_Father: {fileID: 1685422077}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &18846468
 GameObject:
@@ -1231,7 +1231,7 @@ Transform:
   - {fileID: 868512549}
   - {fileID: 514252590}
   m_Father: {fileID: 2050767739}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &58296753
 PrefabInstance:
@@ -1278,7 +1278,7 @@ PrefabInstance:
     - target: {fileID: 7194565067473915959, guid: cb0d91cc30fe4446b86a9f6c7c0a6c26,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7194565067473915959, guid: cb0d91cc30fe4446b86a9f6c7c0a6c26,
         type: 3}
@@ -1347,7 +1347,7 @@ MonoBehaviour:
   otherDishButtons: []
   blackBackground: {fileID: 2037567001}
   blackBackgroundAnimator: {fileID: 2037567002}
-  activeDishKeeper: {fileID: 1344778763}
+  activeDishKeeper: {fileID: 208697702}
 --- !u!114 &58296757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1373,7 +1373,7 @@ GameObject:
   - component: {fileID: 67573451}
   - component: {fileID: 67573452}
   m_Layer: 5
-  m_Name: Option_2
+  m_Name: DonutOption_2
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1414,6 +1414,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 1687422728}
+  eng: Cinnamon & sugar
+  ger: Zimt & Zucker
+  language: {fileID: 1539099978}
   MAXIMUM: 3
   MINIMUM: 0
   fullText: 
@@ -1659,7 +1662,7 @@ GameObject:
   - component: {fileID: 91346249}
   - component: {fileID: 91346250}
   m_Layer: 5
-  m_Name: Option_2
+  m_Name: EisOption_2
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1700,7 +1703,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 2040109785}
-  MAXIMUM: 3
+  eng: Chocolate
+  ger: Schoko
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &107709506
@@ -1802,7 +1808,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 2050767739}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &112497592
 GameObject:
@@ -2356,7 +2362,7 @@ Transform:
   - {fileID: 2085826637}
   - {fileID: 443591137}
   m_Father: {fileID: 1685422077}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &152493348
 GameObject:
@@ -2540,7 +2546,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 1700515907}
-  MAXIMUM: 2
+  eng: Ketchup
+  ger: Ketchup
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &167757801
@@ -2554,7 +2563,7 @@ GameObject:
   - component: {fileID: 167757802}
   - component: {fileID: 167757803}
   m_Layer: 5
-  m_Name: Option_1
+  m_Name: PancakeOption_1
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2595,7 +2604,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 867136353}
-  MAXIMUM: 3
+  eng: Maple syrup
+  ger: Ahornsirup
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &172244330
@@ -2739,7 +2751,7 @@ GameObject:
   - component: {fileID: 176275893}
   - component: {fileID: 176275894}
   m_Layer: 5
-  m_Name: Option_1
+  m_Name: EisOption_1
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2780,7 +2792,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 257609408}
-  MAXIMUM: 3
+  eng: Vanilla
+  ger: Vanille
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &188432359
@@ -2794,7 +2809,7 @@ GameObject:
   - component: {fileID: 188432360}
   - component: {fileID: 188432361}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: WasserOption_3
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2835,7 +2850,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 513692739}
-  MAXIMUM: 3
+  eng: Much sparkling
+  ger: MIt viel Sprudel
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &199241104
@@ -3161,7 +3179,7 @@ GameObject:
   - component: {fileID: 203824740}
   - component: {fileID: 203824741}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: PancakeOption_3
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3202,7 +3220,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 1545820460}
-  MAXIMUM: 3
+  eng: Berry
+  ger: Beeren
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &208697700
@@ -3267,7 +3288,7 @@ GameObject:
   - component: {fileID: 227246191}
   - component: {fileID: 227246192}
   m_Layer: 5
-  m_Name: Option_1
+  m_Name: WeinOption_1
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3308,7 +3329,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 1316058686}
-  MAXIMUM: 3
+  eng: Red wine
+  ger: Rotwein
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &232984408
@@ -3742,7 +3766,7 @@ MonoBehaviour:
   otherDishButtons: []
   blackBackground: {fileID: 107709506}
   blackBackgroundAnimator: {fileID: 107709507}
-  activeDishKeeper: {fileID: 1733558797}
+  activeDishKeeper: {fileID: 208697702}
 --- !u!1 &238623480
 GameObject:
   m_ObjectHideFlags: 0
@@ -4610,7 +4634,7 @@ GameObject:
   - component: {fileID: 257609409}
   - component: {fileID: 257609408}
   m_Layer: 5
-  m_Name: Option_1_Text
+  m_Name: EisOption_1_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4654,7 +4678,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Schokokuchen
+  m_text: Vanille
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4699,7 +4723,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 10
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -4723,12 +4747,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 257609408}
-    characterCount: 12
+    characterCount: 7
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -4804,7 +4828,7 @@ PrefabInstance:
     - target: {fileID: 2974402627286897672, guid: 80419dc9e995d4ebe88b70202a8f8d59,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2974402627286897672, guid: 80419dc9e995d4ebe88b70202a8f8d59,
         type: 3}
@@ -4882,7 +4906,7 @@ MonoBehaviour:
   otherDishButtons: []
   blackBackground: {fileID: 2037567001}
   blackBackgroundAnimator: {fileID: 2037567002}
-  activeDishKeeper: {fileID: 1344778763}
+  activeDishKeeper: {fileID: 208697702}
 --- !u!1 &265633159
 GameObject:
   m_ObjectHideFlags: 0
@@ -5063,7 +5087,7 @@ GameObject:
   - component: {fileID: 282801587}
   - component: {fileID: 282801586}
   m_Layer: 5
-  m_Name: Option_1_Text
+  m_Name: KuchenOption_1_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5543,7 +5567,7 @@ GameObject:
   - component: {fileID: 297341833}
   - component: {fileID: 297341832}
   m_Layer: 5
-  m_Name: Option_2_Text
+  m_Name: KuchenOption_2_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5895,7 +5919,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 1405879544}
-  MAXIMUM: 2
+  eng: Mayonaise
+  ger: Mayo
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &307745117
@@ -6508,7 +6535,7 @@ GameObject:
   - component: {fileID: 354941801}
   - component: {fileID: 354941800}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: WeinOption_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6552,7 +6579,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Donauwelle
+  m_text: Sekt
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6621,7 +6648,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 354941800}
-    characterCount: 10
+    characterCount: 4
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -7547,7 +7574,7 @@ GameObject:
   - component: {fileID: 415149928}
   - component: {fileID: 415149929}
   m_Layer: 5
-  m_Name: Option_2
+  m_Name: KuchenOption_2
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7588,7 +7615,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 297341832}
-  MAXIMUM: 3
+  eng: Cheesecake
+  ger: "K\xE4sekuchen"
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &424757649
@@ -8076,7 +8106,7 @@ MonoBehaviour:
   TextField: {fileID: 443591139}
   gerText: Donut ein frittiertes Hefegebaeck mit Zuckergussglasur
   engText: Donut a deep-fried yeast biscuit with icing
-  language: {fileID: 1029580696}
+  language: {fileID: 1539099978}
 --- !u!114 &443591139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8772,7 +8802,7 @@ GameObject:
   - component: {fileID: 471448703}
   - component: {fileID: 471448704}
   m_Layer: 5
-  m_Name: Option_1
+  m_Name: BierOption_1
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8813,7 +8843,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 1745088331}
-  MAXIMUM: 3
+  eng: Ligth
+  ger: Helles
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &480313283
@@ -9028,6 +9061,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 1202246091}
+  eng: Pickle
+  ger: "Gew\xFCrzgurke"
+  language: {fileID: 1539099978}
   MAXIMUM: 3
   MINIMUM: 0
   fullText: 
@@ -9810,7 +9846,7 @@ GameObject:
   - component: {fileID: 513692740}
   - component: {fileID: 513692739}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: WasserOption_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9854,7 +9890,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Donauwelle
+  m_text: Mit viel Sprudel
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9899,7 +9935,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 9
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -9923,12 +9959,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 513692739}
-    characterCount: 10
+    characterCount: 16
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -10009,7 +10045,7 @@ MonoBehaviour:
   TextField: {fileID: 514252592}
   gerText: Wasser Naturell aus den Quellen Italiens
   engText: Natural water from the springs of Italy
-  language: {fileID: 1983138310}
+  language: {fileID: 1539099978}
 --- !u!114 &514252592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10189,7 +10225,7 @@ GameObject:
   - component: {fileID: 519843690}
   - component: {fileID: 519843689}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: EisOption_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10233,7 +10269,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Donauwelle
+  m_text: Stracciatella
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10302,7 +10338,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 519843689}
-    characterCount: 10
+    characterCount: 13
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -10333,6 +10369,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519843687}
   m_CullTransparentMesh: 0
+--- !u!21 &520946706
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'NachspeisenMaterial
+
+    20804'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 230f5db5fe984f6daab8fcdbc7a26f27, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &522338995
 GameObject:
   m_ObjectHideFlags: 0
@@ -10474,7 +10538,7 @@ GameObject:
   - component: {fileID: 525809044}
   - component: {fileID: 525809045}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: KuchenOption_3
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10515,7 +10579,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 828288850}
-  MAXIMUM: 3
+  eng: Danube wave
+  ger: Donauwelle
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &534122589
@@ -10858,7 +10925,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1685422077}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544573993
 GameObject:
@@ -11071,7 +11138,7 @@ MonoBehaviour:
   TextField: {fileID: 550409372}
   gerText: Kuchen aus Teig gebacken mit Cremes
   engText: Cake made of dough and cream inside
-  language: {fileID: 1029580696}
+  language: {fileID: 1539099978}
 --- !u!114 &550409372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11239,6 +11306,169 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!43 &557406125
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ImageTargetMesh20794
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 10, y: 0, z: 13.051643}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200020001000300
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 000020c10000000088d350c1000000000000803f000000000000000000000000000020c10000000088d35041000000000000803f00000000000000000000803f000020410000000088d350c1000000000000803f000000000000803f00000000000020410000000088d35041000000000000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 10, y: 0, z: 13.051643}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &559517738
 GameObject:
   m_ObjectHideFlags: 0
@@ -11366,7 +11596,7 @@ Transform:
   - {fileID: 770260213}
   - {fileID: 1442653494}
   m_Father: {fileID: 2050767739}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &564851553
 GameObject:
@@ -11543,7 +11773,7 @@ PrefabInstance:
     - target: {fileID: 5918790304941259426, guid: 521e9b7051c364fd689f4be990762a4c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5918790304941259426, guid: 521e9b7051c364fd689f4be990762a4c,
         type: 3}
@@ -11612,7 +11842,7 @@ MonoBehaviour:
   otherDishButtons: []
   blackBackground: {fileID: 2037567001}
   blackBackgroundAnimator: {fileID: 2037567002}
-  activeDishKeeper: {fileID: 1344778763}
+  activeDishKeeper: {fileID: 208697702}
 --- !u!114 &565072129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11638,7 +11868,7 @@ GameObject:
   - component: {fileID: 565189450}
   - component: {fileID: 565189451}
   m_Layer: 5
-  m_Name: Option_1
+  m_Name: KuchenOption_1
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11679,7 +11909,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 282801586}
-  MAXIMUM: 3
+  eng: Chocolatecake
+  ger: Schokokuchen
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &572384632
@@ -11848,34 +12081,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!21 &576849129
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Hauptspeisen_SchwarzMaterial
-
-    20190'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 063e1c4f9b6644699da43d7d4309e9f2, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &586001508
 GameObject:
   m_ObjectHideFlags: 0
@@ -12018,7 +12223,7 @@ GameObject:
   - component: {fileID: 587550162}
   - component: {fileID: 587550161}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: ColaOption_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12062,7 +12267,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Donauwelle
+  m_text: Zero
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12131,7 +12336,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 587550161}
-    characterCount: 10
+    characterCount: 4
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -12243,7 +12448,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2143299675}
   m_HandleRect: {fileID: 2143299674}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -12466,7 +12671,7 @@ PrefabInstance:
     - target: {fileID: 4817030123497834956, guid: ed4d5ed12aa224273aaae2d908b0c393,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4817030123497834956, guid: ed4d5ed12aa224273aaae2d908b0c393,
         type: 3}
@@ -13043,7 +13248,7 @@ Transform:
   - {fileID: 466196249}
   - {fileID: 917820586}
   m_Father: {fileID: 1685422077}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &657740714
 GameObject:
@@ -14552,7 +14757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4477138041755894, guid: 293ec170ec9912240b5765c4cf87f845, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4477138041755894, guid: 293ec170ec9912240b5765c4cf87f845, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14906,7 +15111,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2050767739}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &759874428
 GameObject:
@@ -15345,7 +15550,7 @@ GameObject:
   - component: {fileID: 784936896}
   - component: {fileID: 784936897}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: BierOption_3
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15386,7 +15591,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 892291850}
-  MAXIMUM: 3
+  eng: From the Barrel
+  ger: Vom Fass
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &786947880
@@ -15401,7 +15609,7 @@ GameObject:
   - component: {fileID: 786947883}
   - component: {fileID: 786947882}
   m_Layer: 5
-  m_Name: Option_1_Text
+  m_Name: WasserOption_1_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15445,7 +15653,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Schokokuchen
+  m_text: Still
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15490,7 +15698,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 10
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -15514,12 +15722,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 786947882}
-    characterCount: 12
+    characterCount: 5
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -15976,7 +16184,7 @@ MonoBehaviour:
   otherDishButtons: []
   blackBackground: {fileID: 107709506}
   blackBackgroundAnimator: {fileID: 107709507}
-  activeDishKeeper: {fileID: 1733558797}
+  activeDishKeeper: {fileID: 0}
 --- !u!1 &819561423
 GameObject:
   m_ObjectHideFlags: 0
@@ -15989,7 +16197,7 @@ GameObject:
   - component: {fileID: 819561426}
   - component: {fileID: 819561425}
   m_Layer: 5
-  m_Name: Option_1_Text
+  m_Name: ColaOption_1_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16033,7 +16241,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Schokokuchen
+  m_text: Normal
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16078,7 +16286,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 10
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -16102,12 +16310,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 819561425}
-    characterCount: 12
+    characterCount: 6
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -16145,7 +16353,7 @@ GameObject:
   - component: {fileID: 828288851}
   - component: {fileID: 828288850}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: KuchenOption_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16300,7 +16508,7 @@ GameObject:
   - component: {fileID: 830491350}
   - component: {fileID: 830491351}
   m_Layer: 5
-  m_Name: Option_2
+  m_Name: BierOption_2
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16341,7 +16549,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 2116668750}
-  MAXIMUM: 3
+  eng: Dark
+  ger: Dunkles
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &833453064
@@ -16704,34 +16915,169 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841195881}
   m_CullTransparentMesh: 0
---- !u!21 &855055214
-Material:
-  serializedVersion: 6
+--- !u!43 &841440780
+Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'NachspeisenMaterial
-
-    20510'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
+  m_Name: ImageTargetMesh21230
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 10, y: 0, z: 13.1469}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200020001000300
+  m_VertexData:
     serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 230f5db5fe984f6daab8fcdbc7a26f27, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 000020c100000000b45952c1000000000000803f000000000000000000000000000020c100000000b4595241000000000000803f00000000000000000000803f0000204100000000b45952c1000000000000803f000000000000803f000000000000204100000000b4595241000000000000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 10, y: 0, z: 13.1469}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &859369030
 GameObject:
   m_ObjectHideFlags: 0
@@ -16900,7 +17246,7 @@ GameObject:
   - component: {fileID: 867136354}
   - component: {fileID: 867136353}
   m_Layer: 5
-  m_Name: Option_1_Text
+  m_Name: PancakeOption_1_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17839,7 +18185,7 @@ MonoBehaviour:
   TextField: {fileID: 888464928}
   gerText: Eis aus Italien bekannt in verschiedenen Sorten
   engText: Ice cream in different flavours
-  language: {fileID: 1029580696}
+  language: {fileID: 1539099978}
 --- !u!114 &888464928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18019,7 +18365,7 @@ GameObject:
   - component: {fileID: 892291851}
   - component: {fileID: 892291850}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: BierOption_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18063,7 +18409,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Donauwelle
+  m_text: Vom Fass
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -18132,10 +18478,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 892291850}
-    characterCount: 10
+    characterCount: 8
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 1
+    wordCount: 2
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -18175,7 +18521,7 @@ GameObject:
   - component: {fileID: 903965030}
   - component: {fileID: 903965029}
   m_Layer: 5
-  m_Name: Option_2_Text
+  m_Name: PancakeOption_2_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18789,7 +19135,7 @@ MonoBehaviour:
   TextField: {fileID: 917820588}
   gerText: Pancakes auch kleine Pfannkuchen gennant
   engText: Pancakes made of dough with toppings
-  language: {fileID: 1029580696}
+  language: {fileID: 1539099978}
 --- !u!114 &917820588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19311,7 +19657,7 @@ GameObject:
   - component: {fileID: 937205722}
   - component: {fileID: 937205721}
   m_Layer: 5
-  m_Name: Option_2_Text
+  m_Name: CaloOption_2_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19355,7 +19701,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "K\xE4sekuchen"
+  m_text: Light
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19424,7 +19770,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 937205721}
-    characterCount: 10
+    characterCount: 5
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -19582,7 +19928,7 @@ Transform:
   - {fileID: 112497593}
   - {fileID: 550409370}
   m_Father: {fileID: 1685422077}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &975408250
 GameObject:
@@ -19724,7 +20070,7 @@ GameObject:
   - component: {fileID: 975714045}
   - component: {fileID: 975714046}
   m_Layer: 5
-  m_Name: Option_2
+  m_Name: WasserOption_2
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19765,7 +20111,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 1543018828}
-  MAXIMUM: 3
+  eng: with sparkling
+  ger: Mit Sprudel
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &977828300
@@ -19927,7 +20276,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2050767739}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &989081271
 MonoBehaviour:
@@ -19997,7 +20346,7 @@ MonoBehaviour:
   TextField: {fileID: 990135467}
   gerText: 
   engText: Dessert
-  language: {fileID: 1029580696}
+  language: {fileID: 0}
 --- !u!114 &990135467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20164,169 +20513,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!43 &996173564
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh25650
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 6
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 4
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 10, y: 0, z: 13.057411}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200020001000300
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 4
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 128
-    _typelessdata: 000020c10000000088d350c1000000000000803f000000000000000000000000000020c10000000088d35041000000000000803f00000000000000000000803f000020410000000088d350c1000000000000803f000000000000803f00000000000020410000000088d35041000000000000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 10, y: 0, z: 13.057411}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &1003999356
 GameObject:
   m_ObjectHideFlags: 0
@@ -20897,50 +21083,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1029580695
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1029580697}
-  - component: {fileID: 1029580696}
-  m_Layer: 0
-  m_Name: Language
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1029580696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1029580695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87c596fec215c4747a7d73ab74402964, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isGerman: 0
---- !u!4 &1029580697
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1029580695}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1685422077}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1031827286
 GameObject:
   m_ObjectHideFlags: 0
@@ -21498,7 +21640,7 @@ GameObject:
   - component: {fileID: 1057363482}
   - component: {fileID: 1057363483}
   m_Layer: 5
-  m_Name: Option_1
+  m_Name: DonutOption_1
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21539,6 +21681,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 1756947672}
+  eng: Icing
+  ger: Zuckerglasur
+  language: {fileID: 1539099978}
   MAXIMUM: 3
   MINIMUM: 0
   fullText: 
@@ -22022,169 +22167,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!43 &1116480400
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh20714
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 6
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 4
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 10, y: 0, z: 13.1469}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200020001000300
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 4
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 128
-    _typelessdata: 000020c100000000b45952c1000000000000803f000000000000000000000000000020c100000000b4595241000000000000803f00000000000000000000803f0000204100000000b45952c1000000000000803f000000000000803f000000000000204100000000b4595241000000000000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 10, y: 0, z: 13.1469}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &1117144898
 GameObject:
   m_ObjectHideFlags: 0
@@ -22640,7 +22622,7 @@ MonoBehaviour:
   otherDishButtons: []
   blackBackground: {fileID: 107709506}
   blackBackgroundAnimator: {fileID: 107709507}
-  activeDishKeeper: {fileID: 1733558797}
+  activeDishKeeper: {fileID: 208697702}
 --- !u!114 &1138970461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23095,6 +23077,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 534122591}
+  eng: Salami
+  ger: Salami
+  language: {fileID: 1539099978}
   MAXIMUM: 3
   MINIMUM: 0
   fullText: 
@@ -23266,7 +23251,7 @@ GameObject:
   - component: {fileID: 1171694183}
   - component: {fileID: 1171694182}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: DonutOption_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23595,7 +23580,7 @@ MonoBehaviour:
   TextField: {fileID: 1178115578}
   gerText: "Cola ist ein coffein- und kohlens\xE4urehaltiges Getraenk"
   engText: Coke is a caffeinated and carbonated drink
-  language: {fileID: 1983138310}
+  language: {fileID: 1539099978}
 --- !u!114 &1178115578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23810,7 +23795,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 576849129}
+  - {fileID: 1313197108}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24867,7 +24852,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 86576757}
-  MAXIMUM: 2
+  eng: French salt
+  ger: Pommessalz
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &1265860126
@@ -25052,6 +25040,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 2130798454}
+  eng: Cheese
+  ger: "K\xE4se"
+  language: {fileID: 1539099978}
   MAXIMUM: 3
   MINIMUM: 0
   fullText: 
@@ -25195,7 +25186,7 @@ GameObject:
   - component: {fileID: 1283681252}
   - component: {fileID: 1283681253}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: ColaOption_3
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25236,9 +25227,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 587550161}
-  MAXIMUM: 3
+  eng: Cola zero
+  ger: Cola Zero
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
+--- !u!21 &1313197108
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Hauptspeisen_SchwarzMaterial
+
+    20234'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 063e1c4f9b6644699da43d7d4309e9f2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1316058684
 GameObject:
   m_ObjectHideFlags: 0
@@ -25251,7 +25273,7 @@ GameObject:
   - component: {fileID: 1316058687}
   - component: {fileID: 1316058686}
   m_Layer: 5
-  m_Name: Option_1_Text
+  m_Name: WeinOption_1_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25295,7 +25317,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Schokokuchen
+  m_text: Rotwein
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -25340,7 +25362,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 10
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -25364,12 +25386,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1316058686}
-    characterCount: 12
+    characterCount: 7
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -26391,51 +26413,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342644549}
   m_CullTransparentMesh: 0
---- !u!1 &1344778762
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1344778764}
-  - component: {fileID: 1344778763}
-  m_Layer: 0
-  m_Name: ActiveDishKeeper
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1344778763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1344778762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e3efa8d8f6d5874ea9f8e6d48877985, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeDishName: 
-  dishActive: 0
---- !u!4 &1344778764
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1344778762}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1685422077}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1354699817
 GameObject:
   m_ObjectHideFlags: 0
@@ -27378,7 +27355,7 @@ MonoBehaviour:
   TextField: {fileID: 1407663963}
   gerText: 
   engText: Drinks
-  language: {fileID: 1983138310}
+  language: {fileID: 0}
 --- !u!114 &1407663963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27909,6 +27886,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 683108147}
+  eng: Mustard
+  ger: Senf
+  language: {fileID: 1539099978}
   MAXIMUM: 2
   MINIMUM: 0
   fullText: 
@@ -27964,6 +27944,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 511231885}
+  eng: Sausages
+  ger: Wiener
+  language: {fileID: 1539099978}
   MAXIMUM: 2
   MINIMUM: 0
   fullText: 
@@ -27978,7 +27961,7 @@ GameObject:
   - component: {fileID: 1418827911}
   - component: {fileID: 1418827912}
   m_Layer: 5
-  m_Name: Option_1
+  m_Name: ColaOption_1
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28019,7 +28002,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 819561425}
-  MAXIMUM: 3
+  eng: Coca Cola
+  ger: Normale Cola
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &1433043258
@@ -28233,7 +28219,7 @@ MonoBehaviour:
   TextField: {fileID: 1442653496}
   gerText: Wein ist ein alkoholisches Getraenk aus dem vergorenen Saft von Weinreben
   engText: Wine is an alcoholic drink made from the fermented juice of grapevines
-  language: {fileID: 1983138310}
+  language: {fileID: 1539099978}
 --- !u!114 &1442653496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29262,7 +29248,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1685422077}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1496362569
 MonoBehaviour:
@@ -30194,6 +30180,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 1689045361}
+  eng: Onions
+  ger: Zwiebel
+  language: {fileID: 1539099978}
   MAXIMUM: 3
   MINIMUM: 0
   fullText: 
@@ -30253,7 +30242,7 @@ GameObject:
   - component: {fileID: 1543018829}
   - component: {fileID: 1543018828}
   m_Layer: 5
-  m_Name: Option_2_Text
+  m_Name: WasserOption_2_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30297,7 +30286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "K\xE4sekuchen"
+  m_text: Sprudel
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -30366,7 +30355,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1543018828}
-    characterCount: 10
+    characterCount: 7
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -30409,7 +30398,7 @@ GameObject:
   - component: {fileID: 1545820461}
   - component: {fileID: 1545820460}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: PancakeOption_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30695,7 +30684,7 @@ GameObject:
   - component: {fileID: 1548419514}
   - component: {fileID: 1548419513}
   m_Layer: 5
-  m_Name: Option_2_Text
+  m_Name: WeinOption_2_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30739,7 +30728,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "K\xE4sekuchen"
+  m_text: "Wei\xDFwein"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -30808,7 +30797,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1548419513}
-    characterCount: 10
+    characterCount: 8
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -30980,7 +30969,7 @@ GameObject:
   - component: {fileID: 1565216385}
   - component: {fileID: 1565216386}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: DonutOption_3
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31021,6 +31010,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 1171694182}
+  eng: Sprinkles
+  ger: Streusel
+  language: {fileID: 1539099978}
   MAXIMUM: 3
   MINIMUM: 0
   fullText: 
@@ -31232,6 +31224,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 2064247030}
+  eng: Fried onions
+  ger: "R\xF6stzwiebeln"
+  language: {fileID: 1539099978}
   MAXIMUM: 1
   MINIMUM: 0
   fullText: 
@@ -31714,7 +31709,7 @@ GameObject:
   - component: {fileID: 1610026169}
   - component: {fileID: 1610026170}
   m_Layer: 5
-  m_Name: Option_2
+  m_Name: WeinOption_2
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31755,7 +31750,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 1548419513}
-  MAXIMUM: 3
+  eng: White wine
+  ger: "Wei\xDFwein"
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &1622314854
@@ -32660,7 +32658,7 @@ GameObject:
   - component: {fileID: 1680490468}
   - component: {fileID: 1680490469}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: WeinOption_3
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32701,7 +32699,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 354941800}
-  MAXIMUM: 3
+  eng: 'sparkling wine '
+  ger: Sekt
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &1685422071
@@ -32732,7 +32733,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685422071}
-  m_Mesh: {fileID: 996173564}
+  m_Mesh: {fileID: 557406125}
 --- !u!23 &1685422073
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32751,7 +32752,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 855055214}
+  - {fileID: 520946706}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32835,10 +32836,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 990135465}
-  - {fileID: 1029580697}
   - {fileID: 2037567004}
   - {fileID: 541839008}
-  - {fileID: 1344778764}
   - {fileID: 1496362568}
   - {fileID: 131466735}
   - {fileID: 945237446}
@@ -32863,7 +32862,7 @@ GameObject:
   - component: {fileID: 1687422729}
   - component: {fileID: 1687422728}
   m_Layer: 5
-  m_Name: Option_2_Text
+  m_Name: DonutOption_2_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33290,7 +33289,7 @@ Transform:
   - {fileID: 248830896}
   - {fileID: 1178115576}
   m_Father: {fileID: 2050767739}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1699588213
 GameObject:
@@ -33786,6 +33785,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 255558064}
+  eng: Cheese
+  ger: "K\xE4se"
+  language: {fileID: 1539099978}
   MAXIMUM: 3
   MINIMUM: 0
   fullText: 
@@ -34049,51 +34051,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724616005}
   m_CullTransparentMesh: 0
---- !u!1 &1733558796
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1733558798}
-  - component: {fileID: 1733558797}
-  m_Layer: 0
-  m_Name: ActiveDishKeeper
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1733558797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733558796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e3efa8d8f6d5874ea9f8e6d48877985, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeDishName: 
-  dishActive: 0
---- !u!4 &1733558798
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733558796}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2050767739}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1734963136
 GameObject:
   m_ObjectHideFlags: 0
@@ -34105,7 +34062,7 @@ GameObject:
   - component: {fileID: 1734963137}
   - component: {fileID: 1734963138}
   m_Layer: 5
-  m_Name: Option_2
+  m_Name: PancakeOption_2
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34146,7 +34103,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 903965029}
-  MAXIMUM: 3
+  eng: Jam
+  ger: Marmelade
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &1742275131
@@ -34204,7 +34164,7 @@ MonoBehaviour:
   TextField: {fileID: 1742275134}
   gerText: Bier ist ein alkoholisches Getraenk aus Hopfen und Malz
   engText: Beer is an alcoholic Drink made of Hops and malt
-  language: {fileID: 1983138310}
+  language: {fileID: 1539099978}
 --- !u!114 &1742275134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34384,7 +34344,7 @@ GameObject:
   - component: {fileID: 1745088332}
   - component: {fileID: 1745088331}
   m_Layer: 5
-  m_Name: Option_1_Text
+  m_Name: BierOption_1_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34428,7 +34388,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Schokokuchen
+  m_text: Helles
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -34473,7 +34433,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 10
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -34497,12 +34457,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1745088331}
-    characterCount: 12
+    characterCount: 6
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -34580,6 +34540,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 1758788797}
+  eng: Mushrooms
+  ger: Pilze
+  language: {fileID: 1539099978}
   MAXIMUM: 3
   MINIMUM: 0
   fullText: 
@@ -34595,7 +34558,7 @@ GameObject:
   - component: {fileID: 1756947673}
   - component: {fileID: 1756947672}
   m_Layer: 5
-  m_Name: Option_1_Text
+  m_Name: DonutOption_1_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35745,7 +35708,7 @@ GameObject:
   - component: {fileID: 1811362561}
   - component: {fileID: 1811362562}
   m_Layer: 5
-  m_Name: Option_1
+  m_Name: WasserOption_1
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35786,7 +35749,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 786947882}
-  MAXIMUM: 3
+  eng: Without sparkling
+  ger: Still
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &1828123376
@@ -35986,7 +35952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8fa6215b40a260e42a29384b61d80d83, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8fa6215b40a260e42a29384b61d80d83, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -37840,50 +37806,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1981146559}
   m_CullTransparentMesh: 0
---- !u!1 &1983138309
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1983138311}
-  - component: {fileID: 1983138310}
-  m_Layer: 0
-  m_Name: Language
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1983138310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983138309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87c596fec215c4747a7d73ab74402964, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isGerman: 0
---- !u!4 &1983138311
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983138309}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2050767739}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1986458785
 GameObject:
   m_ObjectHideFlags: 0
@@ -38410,7 +38332,7 @@ GameObject:
   - component: {fileID: 2012507167}
   - component: {fileID: 2012507168}
   m_Layer: 5
-  m_Name: Option_2
+  m_Name: ColaOption_2
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38451,7 +38373,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 937205721}
-  MAXIMUM: 3
+  eng: Cola light
+  ger: Cola Light
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &2017006131
@@ -38584,34 +38509,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017006131}
   m_CullTransparentMesh: 0
---- !u!21 &2031483797
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'GetraenkeMaterial
-
-    20724'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f457ba41b3d242afa4758edb38cd17ef, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &2033175160
 GameObject:
   m_ObjectHideFlags: 0
@@ -39041,7 +38938,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1685422077}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &2040109783
 GameObject:
@@ -39055,7 +38952,7 @@ GameObject:
   - component: {fileID: 2040109786}
   - component: {fileID: 2040109785}
   m_Layer: 5
-  m_Name: Option_2_Text
+  m_Name: EisOption_2_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39099,7 +38996,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "K\xE4sekuchen"
+  m_text: Schoko
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -39168,7 +39065,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2040109785}
-    characterCount: 10
+    characterCount: 6
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -39199,6 +39096,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040109783}
   m_CullTransparentMesh: 0
+--- !u!21 &2046117603
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'GetraenkeMaterial
+
+    21240'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f457ba41b3d242afa4758edb38cd17ef, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &2050767733
 GameObject:
   m_ObjectHideFlags: 0
@@ -39227,7 +39152,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050767733}
-  m_Mesh: {fileID: 1116480400}
+  m_Mesh: {fileID: 841440780}
 --- !u!23 &2050767735
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39246,7 +39171,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2031483797}
+  - {fileID: 2046117603}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39330,10 +39255,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1407663961}
-  - {fileID: 1983138311}
   - {fileID: 107709509}
   - {fileID: 758776091}
-  - {fileID: 1733558798}
   - {fileID: 989081270}
   - {fileID: 2146620766}
   - {fileID: 559517743}
@@ -39509,6 +39432,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 116409597}
+  eng: Ketchup
+  ger: Ketchup
+  language: {fileID: 1539099978}
   MAXIMUM: 2
   MINIMUM: 0
   fullText: 
@@ -39679,7 +39605,7 @@ GameObject:
   - component: {fileID: 2073074543}
   - component: {fileID: 2073074544}
   m_Layer: 5
-  m_Name: Option_3
+  m_Name: EisOption_3
   m_TagString: dishOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39720,7 +39646,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionTextField: {fileID: 519843689}
-  MAXIMUM: 3
+  eng: Caramel
+  ger: Karamell
+  language: {fileID: 1539099978}
+  MAXIMUM: 1
   MINIMUM: 0
   fullText: 
 --- !u!1 &2076705210
@@ -40259,7 +40188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4061089263597746, guid: 702af0fc8fc387f4a8c06b17fffef759, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4061089263597746, guid: 702af0fc8fc387f4a8c06b17fffef759, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -40317,7 +40246,7 @@ MonoBehaviour:
   otherDishButtons: []
   blackBackground: {fileID: 2037567001}
   blackBackgroundAnimator: {fileID: 2037567002}
-  activeDishKeeper: {fileID: 1344778763}
+  activeDishKeeper: {fileID: 208697702}
 --- !u!114 &2095517503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40600,7 +40529,7 @@ PrefabInstance:
     - target: {fileID: 3008481163575523761, guid: 84a69e9c7b97c4729aa980c592c7e52c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3008481163575523761, guid: 84a69e9c7b97c4729aa980c592c7e52c,
         type: 3}
@@ -40911,7 +40840,7 @@ GameObject:
   - component: {fileID: 2116668751}
   - component: {fileID: 2116668750}
   m_Layer: 5
-  m_Name: Option_2_Text
+  m_Name: BierOption_2_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40955,7 +40884,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "K\xE4sekuchen"
+  m_text: Dunkles
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -41024,7 +40953,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2116668750}
-    characterCount: 10
+    characterCount: 7
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -41931,7 +41860,7 @@ MonoBehaviour:
   otherDishButtons: []
   blackBackground: {fileID: 107709506}
   blackBackgroundAnimator: {fileID: 107709507}
-  activeDishKeeper: {fileID: 1733558797}
+  activeDishKeeper: {fileID: 208697702}
 --- !u!1 &2143299673
 GameObject:
   m_ObjectHideFlags: 0
@@ -42289,7 +42218,7 @@ Transform:
   - {fileID: 1117144899}
   - {fileID: 1742275132}
   m_Father: {fileID: 2050767739}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4777062014016276 stripped
 Transform:

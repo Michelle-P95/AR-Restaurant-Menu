@@ -6,6 +6,8 @@ using TMPro;
 public class DishOption : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI optionTextField;
+    public string eng, ger;
+    public Language language;
     public int MAXIMUM = 3;
     public int MINIMUM = 0; // will be set to 0 if < 0 trough Unity
     public string fullText;
@@ -18,7 +20,7 @@ public class DishOption : MonoBehaviour
         if(MINIMUM < 0) {
             MINIMUM = 0;
         }
-        text = optionTextField.text;
+        text = ger;
         fullText = current + "x " + text;
         optionTextField.SetText(fullText);
     }
@@ -40,6 +42,22 @@ public class DishOption : MonoBehaviour
             current--;            
             fullText = current + "x " + text;
             optionTextField.SetText(fullText);
+        }
+    }
+
+    public void Update()
+    {
+        if (language.isGerman == true)
+        {
+            text = ger;
+            fullText = current + "x " + text;
+            optionTextField.SetText(fullText);
+        }
+        else if (language.isGerman == false)
+        {
+            fullText = current + "x " + text;
+            optionTextField.SetText(fullText);
+            text = eng;
         }
     }
 }
