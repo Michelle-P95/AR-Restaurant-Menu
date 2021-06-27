@@ -14,15 +14,20 @@ public class DishOption : MonoBehaviour
 
     private string text;
     private int current = 1;
+    public bool scriptForBestellDone;
 
     void Start()
     {
-        if(MINIMUM < 0) {
+        
+
+        if (MINIMUM < 0) {
             MINIMUM = 0;
         }
         text = ger;
-        fullText = current + "x " + text;
+        if (scriptForBestellDone) fullText = text;
+        else fullText = current + "x " + text;
         optionTextField.SetText(fullText);
+
     }
 
     public void add()
@@ -51,13 +56,16 @@ public class DishOption : MonoBehaviour
         {
             text = ger;
             fullText = current + "x " + text;
+            if (scriptForBestellDone) fullText = text;
             optionTextField.SetText(fullText);
         }
         else if (language.isGerman == false)
         {
-            fullText = current + "x " + text;
-            optionTextField.SetText(fullText);
             text = eng;
+            fullText = current + "x " + text;
+            if (scriptForBestellDone) fullText = text;
+            optionTextField.SetText(fullText);
+            
         }
     }
 }
