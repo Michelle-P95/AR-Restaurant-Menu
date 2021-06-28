@@ -25,7 +25,6 @@ public class Speisekarte : MonoBehaviour
     {
         virtualButton = GameObject.Find("VirtualButton_" + gericht);
         description = GameObject.Find(gericht + "_Description");
-        textplanes = description.GetComponent<TextPlanes>();
         backButtonPosition = GameObject.Find("BackButtonPosition").transform;
         originalButtonPosition = virtualButton.transform;
 

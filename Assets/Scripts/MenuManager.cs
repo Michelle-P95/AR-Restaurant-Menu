@@ -115,6 +115,7 @@ public class MenuManager : MonoBehaviour
         // sende String des Warenkorbs an Küche, damit sie wissen, was sie zubereiten sollen
         Debug.Log("Bestellung wurde aufgegeben und wir nun zubereitet.");
         bestellungDoneUI.SetActive(true);
+        warenkorb.emptyWarenkorb();
     }
 
     ///////////////////////////////////////////////////////////////

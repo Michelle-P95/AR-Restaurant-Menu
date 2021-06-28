@@ -28,4 +28,10 @@ public class Warenkorb : MonoBehaviour
         }
         return alleBestellungen;
     }
+
+    public void emptyWarenkorb() {
+        alleBestellungen = "";
+        bestellungen.Clear();
+        Debug.Log("Warenkorb geleert.");
+    }
 }
