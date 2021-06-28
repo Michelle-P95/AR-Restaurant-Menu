@@ -10,3 +10,4 @@ public class ButtonTranslateBehav : MonoBehaviour
         language.changeLang();
     }
 }
+

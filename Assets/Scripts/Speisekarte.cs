@@ -9,6 +9,7 @@ public class Speisekarte : MonoBehaviour
     public String gericht;
     public GameObject gericht3Dmodel;
     public GameObject virtualButton;
+    
     public GameObject[] otherDishButtons;
     public GameObject blackBackground;
     public Animator blackBackgroundAnimator;
@@ -24,18 +25,18 @@ public class Speisekarte : MonoBehaviour
     {
         virtualButton = GameObject.Find("VirtualButton_" + gericht);
         description = GameObject.Find(gericht + "_Description");
+        textplanes = description.GetComponent<TextPlanes>();
         backButtonPosition = GameObject.Find("BackButtonPosition").transform;
         originalButtonPosition = virtualButton.transform;
 
         virtualButton.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonPressed(OnButtonPressed);
         virtualButton.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonReleased(OnButtonReleased);
-
+        
         gericht3Dmodel.SetActive(false);
         blackBackground.SetActive(false);
         description.SetActive(false);
         dishActive = false;
     }
-
     // Methoden wenn VirtualButton mit finger getriggert wird
     private void OnButtonPressed(VirtualButtonBehaviour obj)
     {
@@ -95,6 +96,4 @@ public class Speisekarte : MonoBehaviour
         yield return new WaitForSeconds(1);
         blackBackground.SetActive(false);
     }
-
-
 }
