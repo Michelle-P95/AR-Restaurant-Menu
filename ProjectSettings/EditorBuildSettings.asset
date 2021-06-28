@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/UE2_VideoCube.unity
     guid: 02a27b16133bd459bb3ca86616937caf
   - enabled: 1
-    path: Assets/Scenes/Hauptspeisen_Speisekarte.unity
+    path: Assets/Scenes/Hauptspeisen_Speisekarte_Canvas.unity
     guid: a4468069c05904d6b9b3384d8bba3608
   m_configObjects: {}

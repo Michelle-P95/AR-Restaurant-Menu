@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class ButtonTranslateBehav : MonoBehaviour
 {
+    public Language language;
     public void DOSOMETHING()
     {
-        FindObjectOfType<TextPlanes>().changeLang();
-        FindObjectOfType<HeaderBehav>().changeLang();
+        language.changeLang();
     }
 }
+

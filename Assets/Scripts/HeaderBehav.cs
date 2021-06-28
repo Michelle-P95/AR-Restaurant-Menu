@@ -4,35 +4,26 @@ using UnityEngine;
 
 public class HeaderBehav : MonoBehaviour
 {
-    public GameObject germanText;
-    public GameObject englishText;
-    public bool isGerman;
+    public GameObject header;
+    public Language language;
     // Start is called before the first frame update
     void Start()
     {
-        germanText.SetActive(true);
-        isGerman = true;
-    }
-
-    public void changeLang()
-    {
-        if (isGerman == true)
-        {
-            germanText.SetActive(false);
-            englishText.SetActive(true);
-            isGerman = false;
-        }
-        else if (isGerman == false)
-        {
-            germanText.SetActive(true);
-            englishText.SetActive(false);
-            isGerman = true;
-        }
+        //header = GameObject.Find("Header");
+        header.SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (language.isGerman == true)
+        {
+            header.SetActive(true);
+        }
+        else if (language.isGerman == false)
+        {
+            header.SetActive(false);
+        }
+
     }
 }

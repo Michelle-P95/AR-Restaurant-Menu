@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 9dcf1ccb04a8ee945a60e27c21450d2f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Cantate Beveled
+  fontNames:
+  - Cantate Beveled
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d4d81f1ecff0a5e4aba3c6ec73335582, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

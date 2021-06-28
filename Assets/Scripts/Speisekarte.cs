@@ -12,16 +12,13 @@ public class Speisekarte : MonoBehaviour
     
     public GameObject[] otherDishButtons;
     public GameObject blackBackground;
+    public Animator blackBackgroundAnimator;
+    public ActiveDishKeeper activeDishKeeper;
 
     private GameObject description;
     private Boolean dishActive;
     private Transform backButtonPosition;
     private Transform originalButtonPosition;
-    private Animation fadeIn, fadeOut;
-    private TextPlanes textplanes;
-    
-    public GameObject gericht3DmodelLast;
-
 
     // Start is called before the first frame update
     void Start()
@@ -37,39 +34,34 @@ public class Speisekarte : MonoBehaviour
         
         gericht3Dmodel.SetActive(false);
         blackBackground.SetActive(false);
-        fadeIn = blackBackground.GetComponent<Animation>();
         description.SetActive(false);
         dishActive = false;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     // Methoden wenn VirtualButton mit finger getriggert wird
     private void OnButtonPressed(VirtualButtonBehaviour obj)
     {
         if (dishActive)
-        {
+        { // DEACTIVATE
+            blackBackgroundAnimator.SetBool("dishActive", false);
+            StartCoroutine(waitBeforeClosingBackground());
+            description.SetActive(false);
             gericht3Dmodel.SetActive(false);
-            blackBackground.SetActive(false);
-            textplanes.goOff();
             dishActive = false;
-            // changeButtonPosition();
+            activeDishKeeper.dishActive = dishActive;
+            activeDishKeeper.activeDishName = "";
             activateDeactivateOtherButtons();
         }
         else
         {
             if (virtualButton.activeSelf)
-            {
+            { // ACTIVATE
                 gericht3Dmodel.SetActive(true);
                 blackBackground.SetActive(true);
-                fadeIn.Play();
-                textplanes.goOn();
+                blackBackgroundAnimator.SetBool("dishActive", true);
+                description.SetActive(true);
                 dishActive = true;
-                // changeButtonPosition();
+                activeDishKeeper.dishActive = dishActive;
+                activeDishKeeper.activeDishName = gericht3Dmodel.name;
                 activateDeactivateOtherButtons();
             }
         }
@@ -78,7 +70,6 @@ public class Speisekarte : MonoBehaviour
     public void OnButtonReleased(VirtualButtonBehaviour vb)
     {
         // Debug.Log("Button released");
-
     }
 
     private void activateDeactivateOtherButtons()
@@ -99,19 +90,10 @@ public class Speisekarte : MonoBehaviour
         }
     }
 
-    // TODO: funktioniert noch nicht (Buttons bleiben an falscher Position bestehen)
-    // um aktiven Button des Gerichts rechts neben das 3d Model zu bewegen wenn Gericht aktiv
-    // bei Deaktivierung wird Btn wieder zurück an Originalposition gesetzt
-    private void changeButtonPosition()
+    //  only called to wait for a second before deactivating the background, so the animation has time to finish
+    private IEnumerator waitBeforeClosingBackground()
     {
-        if (dishActive)
-        {
-            virtualButton.transform.position = backButtonPosition.position;
-        }
-        else
-        {
-            virtualButton.transform.position = originalButtonPosition.position;
-        }
+        yield return new WaitForSeconds(1);
+        blackBackground.SetActive(false);
     }
-
 }
