@@ -1,5 +1,5 @@
 # AR-Restaurant-Menu
-Projekt für Spezielle Anwendungen der Informatik (SL): Augmented Reality Anwendungen und theoretischen Grundlagen - 3. Zug- SoSe2021
+Projekt für Spezielle Anwendungen der Informatik (SL): Augmented Reality Anwendungen und theoretischen Grundlagen - SoSe2021
 Project in special applications Compputer Science : Augmented Reality Applications and theoretical basics summer 2021
 
 Team : Michelle Pötsch, Markus Müller, Minh Anh Vu
