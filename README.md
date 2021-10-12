@@ -1,12 +1,12 @@
 # AR-Restaurant-Menu
-Projekt für Spezielle Anwendungen der Informatik (SL): Augmented Reality Anwendungen und theoretischen Grundlagen - SoSe2021 //
+Projekt für Spezielle Anwendungen der Informatik : Augmented Reality Anwendungen und theoretischen Grundlagen - SoSe2021
 
 Project in special applications Compputer Science : Augmented Reality Applications and theoretical basics summer 2021
 
-Team : Michelle Pötsch, Markus Müller, Minh Anh Vu
+> Team : Michelle Pötsch, Markus Müller, Minh Anh Vu
 _________________________________________________________________________________ 
  
-3 Menus as Image-Targets (see below)
+### 3 Menus as Image-Targets (see below)
 
  
 Main Dish / Hauptspeisen
